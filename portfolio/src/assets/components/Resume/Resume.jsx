@@ -5,7 +5,7 @@ import { ButtonPrincipal } from "../button/ButtonPrincipal";
 export function Resume() {
   return (
     <div className="flex flex-col justify-center">
-      <div className="flex flex-row items-start">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start">
         <ProfilePhoto />
         <InformationProfile />
       </div>
