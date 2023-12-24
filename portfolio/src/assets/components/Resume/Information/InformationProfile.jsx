@@ -13,7 +13,7 @@ export function InformationProfile() {
         <span dangerouslySetInnerHTML={{ __html: t('informationProfile.role.uiUxDesigner') }} />
       </p>
       <SocialMedia />
-      <p className="mt-3 w-2/4 my-5 lg:my-0 lg:w-full" dangerouslySetInnerHTML={{ __html: t('informationProfile.description') }} />
+      <p className="mt-3 w-1/2 text-center my-5 lg:my-0 lg:w-full" dangerouslySetInnerHTML={{ __html: t('informationProfile.description') }} />
     </div>
   );
 }
