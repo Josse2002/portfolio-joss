@@ -26,7 +26,7 @@ export function AboutMe() {
       <h2 className="text-2xl uppercase tracking-widest text-center my-16 font-semibold">
         {t('aboutMeAndSkills')}
       </h2>
-      <div className="flex flex-col px-16 lg:flex-row gap-10 items-start">
+      <div className="flex flex-col px-16 lg:px-0 lg:flex-row gap-10 items-start">
         <div className="flex flex-col gap-4">
           <p>
             {t('introText1')} <span className="font-bold text-green-dark">{t('creativeSolutions')}</span> {t('introText2')}
