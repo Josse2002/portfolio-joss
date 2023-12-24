@@ -10,7 +10,7 @@ export function Resume() {
         <InformationProfile />
       </div>
       <div className="flex flex-row justify-center relative">
-        <ButtonPrincipal text={"Download resume"} />
+        <ButtonPrincipal text={"Download resume"}  link={"https://firebasestorage.googleapis.com/v0/b/portfolio-joss-d5e71.appspot.com/o/docs%2FCV_Joss.pdf?alt=media&token=2bca03a3-b34d-4869-ae52-2c3d67c88f3e"} />
       </div>
     </div>
   );

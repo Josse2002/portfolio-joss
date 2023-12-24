@@ -1,4 +1,4 @@
-import Joss from "../../../../assets/images/joss.jpg";
+import Joss from "../../../../assets/images/joss.webp";
 import "./ProfilePhoto.css";
 
 export function ProfilePhoto() {
@@ -6,7 +6,11 @@ export function ProfilePhoto() {
     <>
       <div className="relative lg:mr-20">
         <figure className="w-40 h-40 rounded-full overflow-hidden my-10 border-t-4">
-          <img src={Joss} alt="Joss image" />
+          <img
+            src={Joss}
+            alt="Joss image"
+            className="w-full h-full"
+          />
         </figure>
         <div className="w-40 h-40 border-transparent border-l-green-dark border-4 border-green-dark rounded-full absolute top-10 rotate-45"></div>
         <div className="w-40 h-40 border-transparent border-r-green-dark border-4 border-green-dark rounded-full absolute top-10 rotate-45"></div>

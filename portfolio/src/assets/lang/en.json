@@ -1,0 +1,62 @@
+{
+    "aboutMeAndSkills": "About me and skills",
+    "creativeSolutions": "creative solutions",
+    "visualAppeal": "visual appeal",
+    "introText1": "I'm José Castillo, a Frontend Developer based in El Salvador, passionate about adding value to businesses through technology. I enjoy the challenge of finding",
+    "introText2": "to problems, and I love collaborating with teams to achieve excellent results.",
+    "introText3": "Although I don't have formal work experience, I have dedicated time to working on both personal and company projects, focusing on frontend development and web design. I am especially passionate about ensuring that each project not only is functional but also",
+    "introText4": ". My focus is on meticulous attention to detail in design and development.",
+    "introText5": "I'm always up-to-date with the latest technologies and trends to provide the best solutions to my clients. My ultimate goal is to create software that is easy to use and has a significant impact on achieving client objectives.",
+    "language": {
+        "es": "ES",
+        "en": "EN"
+    },
+    "getInTouch": {
+        "title": "Get in touch",
+        "content": "Currently without a specific position, but always open to new opportunities. My inbox is available for questions, greetings, or potential collaborations. I hope to hear from you soon!",
+        "buttonText": "Say Hello!",
+        "designedAndBuilt": "Designed & Built ",
+        "by": "by",
+        "yourName": "Josse Castillo"
+    },
+    "timeline": {
+        "title": "Experience and Education",
+        "items": [
+            {
+                "title": "Vocational Technical in Software Development",
+                "description": "I obtained my Vocational Technical degree in Software Development from Colegio Salarrué, where I gained knowledge in algorithms and computational logic."
+            },
+            {
+                "title": "Certification in HTML and CSS3",
+                "description": "I recently completed a course and obtained a certificate in HTML and CSS3, strengthening my skills in web development and interface design."
+            },
+            {
+                "title": "Certification in Java and JRE (Oracle One) - Alura Latam",
+                "description": "I achieved a certification in Java and Java Runtime Environment (JRE) through the Oracle One program at Alura Latam, strengthening my skills in Java application development."
+            },
+            {
+                "title": "University Studies in Computer Engineering - UCA El Salvador",
+                "description": "I am currently pursuing my degree in Computer Engineering at the Universidad Centroamericana (UCA) in El Salvador, where I am acquiring solid knowledge in key areas of computer science and technology."
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects"
+      },
+      "firebase": {
+        "error": "Unable to fetch projects. Please try again later."
+      },
+      "card": {
+        "view": "View",
+        "viewCode": "View Code"
+      },
+      "informationProfile": {
+        "name": "Josse Castillo",
+        "role": {
+          "frontendDeveloper": "Frontend Developer",
+          "uiUxDesigner": "UX/UI Designer"
+        },
+        "description": "I seek the perfect harmony between <span class='font-bold text-green-dark'>aesthetics</span> and <span class='font-bold text-green-dark'>usability</span>, blending each line of code with visual concepts."
+      }
+    
+}

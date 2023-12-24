@@ -1,7 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import ViteCompressionPlugin from 'vite-plugin-compression';
+import VitePluginVisualizer from 'vite-plugin-visualizer';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+export default {
+  // ...otras configuraciones...
+  plugins: [
+    VitePluginVisualizer(),
+    ViteCompressionPlugin({
+      verbose: true,
+      disable: false,
+      threshold: 10240,
+      algorithm: 'gzip', // Puedes usar 'gzip' o 'brotli'
+      ext: '.gz', // Extensión del archivo comprimido
+    }),
+  ],
+};

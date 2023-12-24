@@ -1,26 +1,38 @@
-import React from "react";
+// Card.js
+import React, { useEffect, memo } from "react";
+import { useTranslation } from 'react-i18next';
 import { Tags } from "./Tags";
+import AOS from 'aos';
 import { ButtonSecondary } from "../button/ButtonSecondary";
-import "./Card.css"; // Import your custom CSS file for styling
+import "./Card.css"; // Importa tu archivo de CSS personalizado para el estilo
+import 'aos/dist/aos.css';
 
-// This code creates a card component that can be used to display a project in a portfolio.
-// The card has an image, a title, some tags, and a short description, as well as buttons
-// to view the project and the project code.
 
-export function Card({title, liveCode, image, githubLink, description, techStack}) {
+export const Card = memo(({ title, liveCode, image, githubLink, description, techStack, descriptionEnglish }) => {
+  // ...
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  // Verifica el idioma actual
+  const isSpanish = i18n.language === 'es';
+
   return (
-    <div className="card-container border text-card-foreground max-w-sm my-5 mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl">
+    <article data-aos="fade-up" className="card-container border text-card-foreground max-w-sm my-5 mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl">
       <div className="md:flex">
-        {/** Image of the card */}
+        {/* Imagen de la tarjeta */}
         <div className="md:flex-shrink-0">
           <img
             className="h-48 w-full object-cover md:h-full md:w-72"
             src={image}
             alt="projectImage"
+            loading="lazy"
           />
         </div>
 
-        {/** Content of the card */}
+        {/* Contenido de la tarjeta */}
         <div className="p-8 card-content">
           <div className="capitalize tracking-wide text-green-bg font-bold text-3xl">
             {title}
@@ -31,18 +43,17 @@ export function Card({title, liveCode, image, githubLink, description, techStack
             ))}
           </div>
 
+          {/* Verifica el idioma y muestra la descripción correspondiente */}
           <p className="mt-2 text-gray-500">
-            {description}
+            {isSpanish ? description : descriptionEnglish}
           </p>
 
           <div className="flex flex-row mt-4 gap-2">
-            <ButtonSecondary text={"View"} icon={"fa-solid fa-eye"} link={liveCode} />
-            <ButtonSecondary text={"View Code"} icon={"fa-brands fa-github"} link={githubLink} />
+            <ButtonSecondary text={t('card.view')} icon={"fa-solid fa-eye"} link={liveCode} ariaLabel="Boton para ver más" />
+            <ButtonSecondary text={t('card.viewCode')} icon={"fa-brands fa-github"} link={githubLink} ariaLabel="Boton para ver el codigo" />
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
-};
-
-export default Card;
+});

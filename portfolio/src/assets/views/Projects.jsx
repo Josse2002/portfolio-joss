@@ -1,7 +1,10 @@
-import { Card } from "../components/cards/Card";
+// Projects.js
+import React from "react";
+import { useTranslation } from 'react-i18next';
 import { obtenerProyectos } from '../services/firebase.service';
 import { useEffect, useState } from 'react';
 import { Icono } from "../components/icons-transparency/Icons";
+import { Card } from "../components/cards/Card";
 
 const iconos = [
   { clase: "fa-solid fa-rocket", posicion: "top-10 right-28 lg:top-10 lg:-right-10" },
@@ -15,10 +18,9 @@ const iconos = [
   { clase: "fa-solid fa-terminal", posicion: "top-[80rem] right-28 lg:-right-20 rotate-0" },
 ];
 
-
 export function Projects() {
-
   const [proyectos, setProyectos] = useState([]);
+  const { t } = useTranslation();
 
   async function obtenerYMostrarProyectos() {
     try {
@@ -34,9 +36,9 @@ export function Projects() {
   }, []);
 
   return (
-    <div>
+    <>
       <h2 className="text-2xl uppercase tracking-widest text-center mt-16 font-semibold">
-        Projects
+        {t('projects.title')}
       </h2>
 
       <div className="flex flex-col justify-center w-full relative">
@@ -47,17 +49,17 @@ export function Projects() {
             liveCode={proyecto.liveCode}
             image={proyecto.image}
             githubLink={proyecto.githubLink}
-            description={proyecto.description}
+            description={t(proyecto.description)}
             techStack={proyecto.techStack}
+            descriptionEnglish={t(proyecto.descriptionEnglish)}
+            alt={{ projectName: proyecto.title }}
           />
         ))}
 
         {iconos.map((icono) => (
-          <Icono clase={icono.clase} posicion={icono.posicion} />
+          <Icono key={icono.clase} clase={icono.clase} posicion={icono.posicion} />
         ))}
-
-
       </div>
-    </div>
+    </>
   );
 }
