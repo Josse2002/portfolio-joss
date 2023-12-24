@@ -1,0 +1,50 @@
+@keyframes star {
+  0% {
+    transform: translate(-20px, -20px);
+    rotate: 0deg;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    rotate: 360deg;
+  }
+}
+@keyframes meteor {
+  0% {
+    transform: translate(20px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes cloud{
+    0%{
+        transform: translate(20px, -20px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes variable {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#star {
+    animation: star 1s ease-out forwards;
+}
+#meteor{
+    animation: meteor 1s ease-out forwards;
+}
+#cloud{
+    animation: cloud 1s ease-out forwards;
+}
+#variable{
+    animation: variable 0.5s ease-out forwards;
+}
+
+
