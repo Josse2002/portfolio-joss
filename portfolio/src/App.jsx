@@ -14,6 +14,7 @@ function App() {
       <div className="w-full lg:w-1/2">
       <I18nextProvider i18n={i18n}>
         <Header />
+        <h1>Holaa</h1>
         <Resume />
         <AboutMe />
         <Timeline />
