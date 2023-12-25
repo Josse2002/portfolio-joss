@@ -47,6 +47,8 @@ export function AboutMe() {
                 style={{ width: '500px'}} // Establecer anchos y altos directamente
                 src={tech.image}
                 alt={tech.name}
+                width={55.5}
+                height={55.5}
               />
             </React.Fragment>
           ))}
