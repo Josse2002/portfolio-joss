@@ -5,7 +5,7 @@ export function ProfilePhoto() {
   return (
     <>
       <div className="relative lg:mr-20">
-        <figure className="w-40 h-40 rounded-full overflow-hidden my-10 border-t-4">
+        <figure className="w-40 rounded-full overflow-hidden my-10 border-t-4">
           <img
             src={Joss}
             alt="Joss image"
@@ -14,7 +14,7 @@ export function ProfilePhoto() {
           />
         </figure>
         <div className="w-40 h-40 border-transparent border-l-green-dark border-4 border-green-dark rounded-full absolute top-10 rotate-45"></div>
-        <div className="w-40 h-40 border-transparent border-r-green-dark border-4 border-green-dark rounded-full absolute top-10 rotate-45"></div>
+        <div className="w-40 h-40 border-transparent border-r-green-dark border-4 border-green-dark rounded-full absolute top-11 rotate-45"></div>
         <p id="star" className="absolute top-7 -left-3 text-2xl rotate-45 text-green-dark hover:scale-110">
           <i className="fa-solid fa-star"></i>
         </p>
