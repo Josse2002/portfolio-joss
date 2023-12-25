@@ -39,6 +39,7 @@ export function AboutMe() {
           </p>
         </div>
         <div className="grid grid-cols-6 gap-x-2 gap-y-5 lg:grid-cols-3 lg:gap-10 items-center">
+
           {technologies.map((tech, index) => (
             <React.Fragment key={index}>
               <img
