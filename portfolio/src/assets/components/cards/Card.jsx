@@ -27,7 +27,7 @@ export const Card = memo(({ title, liveCode, image, githubLink, description, tec
           <img
             className="w-full object-cover md:h-full md:w-72"
             src={image}
-            aspectRatio="1/1"
+            width="100%"
             alt="projectImage"
             loading="lazy"
           />
