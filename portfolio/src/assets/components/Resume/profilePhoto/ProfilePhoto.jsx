@@ -10,6 +10,7 @@ export function ProfilePhoto() {
             src={Joss}
             alt="Joss image"
             className="w-full h-full"
+            loading="lazy"
           />
         </figure>
         <div className="w-40 h-40 border-transparent border-l-green-dark border-4 border-green-dark rounded-full absolute top-10 rotate-45"></div>
