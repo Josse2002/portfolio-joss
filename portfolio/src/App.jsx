@@ -12,14 +12,14 @@ function App() {
   return (
     <div className="bg-white-bg flex flex-col justify-center items-center">
       <div className="w-full lg:w-1/2">
-      <I18nextProvider i18n={i18n}>
-        <Header />
-        <Resume />
-        <AboutMe />
-        <Timeline />
-        <Projects />
-        <GetTouch />
-      </I18nextProvider>
+        <I18nextProvider i18n={i18n}>
+          <Header />
+          <Resume />
+          <Timeline />
+          <Projects />
+          <AboutMe />
+          <GetTouch />
+        </I18nextProvider>
       </div>
     </div>
   );
