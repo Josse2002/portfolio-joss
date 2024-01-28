@@ -8,7 +8,7 @@ export function Tags({ icon, tooltipText }) {
         data-tooltip-id="my-tooltip"
         data-tooltip-content={tooltipText}
         data-tooltip-place="bottom"
-        className="text-2xl my-3 mr-3 text-green-950 font-medium"
+        className="text-2xl mr-3 text-green-950 font-extralight"
       >
         <i className={`${icon}`}></i>
       </button>

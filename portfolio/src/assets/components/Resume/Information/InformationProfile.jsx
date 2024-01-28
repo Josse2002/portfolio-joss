@@ -9,7 +9,7 @@ export function InformationProfile() {
     <div className="flex flex-col items-center lg:items-start mt-10">
       <h2 className="text-4xl font-bold text-green-dark">{t('informationProfile.name')}</h2>
       <p className="tracking-widest text-gray-700">
-        {t('informationProfile.role.frontendDeveloper')}{" "}
+        {t('informationProfile.role.frontendDeveloper')}{" "} <span className="font-bold">|</span>
         <span dangerouslySetInnerHTML={{ __html: t('informationProfile.role.uiUxDesigner') }} />
       </p>
       <SocialMedia />
