@@ -59,8 +59,7 @@
       "description": "Busco la armonía perfecta entre la <span class='font-bold text-green-dark'>estética</span> y la <span class='font-bold text-green-dark'>usabilidad</span>, fusionando cada línea de código con conceptos visuales."
       },
     "game": {
-        "score": "Puntuación: {{score}}",
-        "clickMe": "¡Haz click!",
+        "instructions": "Muévete con \u2190 \u2192 y dispara con Espacio",
         "close": "Cerrar",
         "youWin": "¡Ganaste!"
     }
