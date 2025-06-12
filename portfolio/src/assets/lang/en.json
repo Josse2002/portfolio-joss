@@ -60,6 +60,8 @@
       },
     "game": {
         "instructions": "Move with \u2190 \u2192 and shoot with Space",
+        "score": "Score: {{score}}",
+        "clickMe": "Click me!",
         "close": "Close",
         "youWin": "You win!"
     }

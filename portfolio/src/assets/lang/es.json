@@ -60,6 +60,8 @@
       },
     "game": {
         "instructions": "Muévete con \u2190 \u2192 y dispara con Espacio",
+        "score": "Puntuación: {{score}}",
+        "clickMe": "¡Haz click!",
         "close": "Cerrar",
         "youWin": "¡Ganaste!"
     }
