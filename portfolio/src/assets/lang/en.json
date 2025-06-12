@@ -56,7 +56,13 @@
           "frontendDeveloper": "Frontend Developer",
           "uiUxDesigner": "UX/UI Designer"
         },
-        "description": "I seek the perfect harmony between <span class='font-bold text-green-dark'>aesthetics</span> and <span class='font-bold text-green-dark'>usability</span>, blending each line of code with visual concepts."
-      }
-    
+      "description": "I seek the perfect harmony between <span class='font-bold text-green-dark'>aesthetics</span> and <span class='font-bold text-green-dark'>usability</span>, blending each line of code with visual concepts."
+      },
+    "game": {
+        "score": "Score: {{score}}",
+        "clickMe": "Click me!",
+        "close": "Close",
+        "youWin": "You win!"
+    }
+
 }

@@ -56,6 +56,12 @@
           "frontendDeveloper": "Desarrollador Frontend",
           "uiUxDesigner": "Diseñador <span class='font-bold text-green-dark'>UX/UI</span>"
         },
-        "description": "Busco la armonía perfecta entre la <span class='font-bold text-green-dark'>estética</span> y la <span class='font-bold text-green-dark'>usabilidad</span>, fusionando cada línea de código con conceptos visuales."
-      }
+      "description": "Busco la armonía perfecta entre la <span class='font-bold text-green-dark'>estética</span> y la <span class='font-bold text-green-dark'>usabilidad</span>, fusionando cada línea de código con conceptos visuales."
+      },
+    "game": {
+        "score": "Puntuación: {{score}}",
+        "clickMe": "¡Haz click!",
+        "close": "Cerrar",
+        "youWin": "¡Ganaste!"
+    }
 }

@@ -5,6 +5,7 @@ import { obtenerProyectos } from '../services/firebase.service';
 import { useEffect, useState } from 'react';
 import { Icono } from "../components/icons-transparency/Icons";
 import { Card } from "../components/cards/Card";
+import { EasterEggGame } from "../components/game/EasterEggGame";
 
 const iconos = [
   { clase: "fa-solid fa-rocket", posicion: "top-10 right-28 lg:top-10 lg:-right-10" },
@@ -20,6 +21,7 @@ const iconos = [
 
 export function Projects() {
   const [proyectos, setProyectos] = useState([]);
+  const [showGame, setShowGame] = useState(false);
   const { t } = useTranslation();
 
   async function obtenerYMostrarProyectos() {
@@ -57,8 +59,15 @@ export function Projects() {
         ))}
 
         {iconos.map((icono) => (
-          <Icono key={icono.clase} clase={icono.clase} posicion={icono.posicion} />
+          <Icono
+            key={icono.clase}
+            clase={icono.clase}
+            posicion={icono.posicion}
+            onClick={icono.clase === 'fa-solid fa-gamepad' ? () => setShowGame(true) : undefined}
+          />
         ))}
+
+        {showGame && <EasterEggGame onClose={() => setShowGame(false)} />}
       </div>
     </>
   );
